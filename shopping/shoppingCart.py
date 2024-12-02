@@ -77,8 +77,8 @@ if __name__ == '__main__':
           print("\n謝謝光臨，再見！")
           break
 
-    #   elif choice == "5":
-    #       cart.checkBalance()
+      elif choice == "5":
+          cart.checkBalance()
 
       else:
           print("\n無效的選項，請重新輸入。")
