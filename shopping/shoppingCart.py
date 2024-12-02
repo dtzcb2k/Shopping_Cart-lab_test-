@@ -51,7 +51,9 @@ class ShoppingCart:
             print("\n餘額不足")
     def remove_cart(self,product_id):
         if product_id in self.shopping_cart:
-            self.shopping_cart.pop(product_id)
+            product = self.shopping_cart.pop(product_id)
+            print(f"\n{product[product_id]['name']} 已移除購物車。")
+        else print("\n該商品不再購物車內")
 
 if __name__ == '__main__':
     cart = ShoppingCart()
